@@ -6,4 +6,8 @@
   <p>{{ product.description }}</p>
 
   <button type="button" (click)="addToCart(product)">Buy</button>
+
+  <button id="more_details" [routerLink]="['/product-item', product.id]">
+    More Details
+  </button>
 </div>

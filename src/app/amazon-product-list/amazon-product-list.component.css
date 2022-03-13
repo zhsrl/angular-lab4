@@ -1,0 +1,13 @@
+a{
+  font-size: 15px;
+}
+
+.item{
+  background-color: rgb(201, 201, 201);
+  padding: 5px;
+  margin: 5px;
+}
+
+p{
+  font-size: 10px;
+}

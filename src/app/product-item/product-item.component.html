@@ -1,1 +1,13 @@
-<p>product-item works!</p>
+<h3>More Details</h3>
+
+
+<div *ngIf="product">
+  <img id="image" src={{product.image}}/>
+  <h4>{{ product.name }}</h4>
+  <h4> {{ product.price | currency}} </h4>
+  <h4> {{ product.ranking}} </h4>
+  <p> {{ product.description }} </p>
+
+  <button type="button" (click)="toBack()">Back</button>
+
+</div>
