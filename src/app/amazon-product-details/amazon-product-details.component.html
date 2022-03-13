@@ -2,7 +2,7 @@
 
 <div *ngIf="amazonProduct">
 <img id="image" src={{amazonProduct.image}}/>
-<h4>{{ amazonProduct.name }}</h4>
+<a class="name_with_link" href={{amazonProduct.link}}>{{ amazonProduct.name }}</a>
 <h4> {{ amazonProduct.price | currency}} </h4>
 <h4> {{ amazonProduct.ranking}} </h4>
 <p> {{ amazonProduct.description }} </p>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { amazonProducts } from '../amazon_products';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,7 +18,11 @@ export class AmazonProductListComponent implements OnInit {
     window.alert('You will be notified when the product goes on sale');
   }
 
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit(): void {}
+
+  urlButton(){
+    this.route.navigateByUrl('https://telegram.org');
+  }
 }

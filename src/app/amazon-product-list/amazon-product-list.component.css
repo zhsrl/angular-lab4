@@ -24,3 +24,7 @@ p{
   flex-direction: row;
   background-color: blue;
 }
+
+.share_text{
+  color: white;
+}
