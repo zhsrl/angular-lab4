@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { amazonProducts } from '../amazon_products';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-amazon-product-list',
   templateUrl: './amazon-product-list.component.html',

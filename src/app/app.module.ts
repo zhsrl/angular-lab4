@@ -16,20 +16,27 @@ import { ProductItemComponent } from './product-item/product-item.component';
 import { AmazonProductListComponent } from './amazon-product-list/amazon-product-list.component';
 import { AmazonProductDetailsComponent } from './amazon-product-details/amazon-product-details.component';
 
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ShareButtonsModule,
+    ShareIconsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'product-item/:productId', component: ProductItemComponent },
-      { path: 'amazon-shop', component: AmazonProductListComponent},
-      { path: 'amazon-products/:productId', component: AmazonProductDetailsComponent}
+      { path: 'amazon-shop', component: AmazonProductListComponent },
+      {
+        path: 'amazon-products/:productId',
+        component: AmazonProductDetailsComponent,
+      },
     ]),
   ],
   declarations: [

@@ -17,3 +17,10 @@ a{
 p{
   font-size: 10px;
 }
+
+.share{
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  background-color: blue;
+}
