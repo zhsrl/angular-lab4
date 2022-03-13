@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { AmazonProductListComponent } from './amazon-product-list/amazon-product-list.component';
+import { AmazonProductDetailsComponent } from './amazon-product-details/amazon-product-details.component';
+
 
 @NgModule({
   imports: [
@@ -27,6 +29,7 @@ import { AmazonProductListComponent } from './amazon-product-list/amazon-product
       { path: 'shipping', component: ShippingComponent },
       { path: 'product-item/:productId', component: ProductItemComponent },
       { path: 'amazon-shop', component: AmazonProductListComponent},
+      { path: 'amazon-products/:productId', component: AmazonProductDetailsComponent}
     ]),
   ],
   declarations: [
@@ -39,6 +42,7 @@ import { AmazonProductListComponent } from './amazon-product-list/amazon-product
     ShippingComponent,
     ProductItemComponent,
     AmazonProductListComponent,
+    AmazonProductDetailsComponent,
   ],
   bootstrap: [AppComponent],
 })
